@@ -35,12 +35,8 @@ public class java014 {
         System.out.println("digite sua nota do 4° bimestre");
         double notasAno4b = scan.nextDouble();
 
-        double notasBimestre1 = notasAno1b;
-        double notasBimestre2 = notasAno2b;
-        double notasBimestre3 = notasAno3b;
-        double notasBimestre4 = notasAno4b;
-        double total = notasBimestre1 + notasBimestre2 + notasBimestre3 + notasBimestre4;
-        double resultadoAnual = total;
+
+        double total = notasAno1b + notasAno2b + notasAno3b + notasAno4b;
         double mediadoAno = total / 4;
 
         String resultado;
@@ -51,7 +47,7 @@ public class java014 {
         }
 
         //05
-        System.out.println("suas notas são 1bimestre = "+ notasBimestre1+ ", segundo bimestre = "+ notasBimestre2 + ", terceiro bimestre = "+ notasBimestre3 +" e quarto bimestre = "+ notasBimestre4);
+        System.out.println("suas notas são 1bimestre = "+ notasAno1b+ ", segundo bimestre = "+ notasAno2b + ", terceiro bimestre = "+ notasAno3b +" e quarto bimestre = "+ notasAno4b);
         System.out.println("sua media foi finalizada com " + mediadoAno);
         System.out.println("seu resultado é = "+ resultado);
         System.out.println("obrigado por responder ao questionario");
