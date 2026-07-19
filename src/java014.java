@@ -2,17 +2,21 @@ import java.util.Scanner;
 
 public class java014 {
     public static void main(String[] args) {
-        //exercicios loiane {013}
-     /*   String saudacaoEUA = "hello World ,";
+        //exercicios loiane {aula-013 ex 01 a 05}
+
+        //01
+        String saudacaoEUA = "hello World ,";
         String saudacaoBR = " olá Mundo ,";
         String saudacaoSPAN = " hola Mundo";
         System.out.println("essas são saudações EUA, BR E SPAN respectivamente na ordem = " + saudacaoEUA + saudacaoBR + saudacaoSPAN);
 
+        //02
         Scanner scan = new Scanner(System.in);
         System.out.println("escreva um numero");
         int numerosDigitados = scan.nextInt();
         System.out.println("voce escreveu o numero '" + numerosDigitados + "'");
 
+        //03
         System.out.println("escreva dois numeros que goste");
         int numero1 = scan.nextInt();
         int numero2 = scan.nextInt();
@@ -20,12 +24,21 @@ public class java014 {
         System.out.println("seus numeros preferidos são '" + numero1 + " e "+ numero2 +"'");
         System.out.println("a soma desses dois numeros é igual a "+ somaDosnumeros);
 
-        */
+        //04
         System.out.println("agora vamos falar sobre as suas notas do 3 ano do ensino médio");
-        double notasBimestre1 = 6.5;
-        double notasBimestre2 = 7.5;
-        double notasBimestre3 = 6;
-        double notasBimestre4 = 8.5;
+        System.out.println("digite sua nota do 1° bimestre");
+        double notasAno1b = scan.nextDouble();
+        System.out.println("digite sua nota do 2° bimestre");
+        double notasAno2b = scan.nextDouble();
+        System.out.println("digite sua nota do 3° bimestre");
+        double notasAno3b = scan.nextDouble();
+        System.out.println("digite sua nota do 4° bimestre");
+        double notasAno4b = scan.nextDouble();
+
+        double notasBimestre1 = notasAno1b;
+        double notasBimestre2 = notasAno2b;
+        double notasBimestre3 = notasAno3b;
+        double notasBimestre4 = notasAno4b;
         double total = notasBimestre1 + notasBimestre2 + notasBimestre3 + notasBimestre4;
         double resultadoAnual = total;
         double mediadoAno = total / 4;
@@ -37,8 +50,18 @@ public class java014 {
             resultado = "reprovado";
         }
 
-        System.out.println("suas notas são 1bimestre = "+ notasBimestre1+ ", segundobimestre = "+ notasBimestre2 + ", terceirobimestre = "+ notasBimestre3 +" e quartobimestre = "+ notasBimestre4);
+        //05
+        System.out.println("suas notas são 1bimestre = "+ notasBimestre1+ ", segundo bimestre = "+ notasBimestre2 + ", terceiro bimestre = "+ notasBimestre3 +" e quarto bimestre = "+ notasBimestre4);
         System.out.println("sua media foi finalizada com " + mediadoAno);
         System.out.println("seu resultado é = "+ resultado);
+        System.out.println("obrigado por responder ao questionario");
+
+        System.out.println("escreva o tamanho em metros");
+        double metrosPeca = scan.nextInt();
+        double centimetros = metrosPeca * 100;
+        double milimetros = centimetros * 100;
+        System.out.println("voce digitou "+ metrosPeca + " em metros e isso é = "+ centimetros + " em centimetros ");
+        System.out.println("e em milimetros é = " + milimetros);
+
     }
 }
