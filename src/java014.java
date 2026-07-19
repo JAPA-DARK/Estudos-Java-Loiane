@@ -45,13 +45,12 @@ public class java014 {
         } else {
             resultado = "reprovado";
         }
-
-        //05
         System.out.println("suas notas são 1bimestre = "+ notasAno1b+ ", segundo bimestre = "+ notasAno2b + ", terceiro bimestre = "+ notasAno3b +" e quarto bimestre = "+ notasAno4b);
         System.out.println("sua media foi finalizada com " + mediadoAno);
         System.out.println("seu resultado é = "+ resultado);
         System.out.println("obrigado por responder ao questionario");
 
+        //05
         System.out.println("escreva o tamanho em metros");
         double metrosPeca = scan.nextInt();
         double centimetros = metrosPeca * 100;
