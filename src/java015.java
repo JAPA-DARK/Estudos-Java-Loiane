@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class java015 {
     public static void main(String[] args){
 
-        //06
+        //06 ultilizei a classe math. para usar a função
         Scanner scan = new Scanner(System.in);
         System.out.println("digite o raio da area(em centimetros pfv né) que deseja calcular");
         double raio = scan.nextDouble();
