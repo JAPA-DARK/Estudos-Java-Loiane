@@ -38,5 +38,6 @@ public class java015 {
         double tempCelsius = scan.nextDouble();
         double farenheit = (celsius * 1.8) + 32;
         System.out.println("a temperatura que voce digitou em celsius é igual a = "+farenheit + " em farenheint!!!");
+
     }
 }
