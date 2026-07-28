@@ -44,7 +44,50 @@ public class java016 {
 
         System.out.println("seu indice de massa corporal indica " + resultado);
 
-         //13
+         //12 Tendo como dados de entrada a altura de uma pessoa, construa um
+        //algoritmo que calcule seu peso ideal
+        System.out.println("entre com sua altura");
+        double Altpessoa = scan.nextDouble();
+        double pesoIDEAL = (72.7 * Altpessoa) - 58;
+        System.out.println("seu peso ideal é = " + pesoIDEAL);
+
+
+        //13
+        System.out.println("entre com sua altura");
+        double alturaDapessoa = scan.nextDouble();
+        scan.nextLine();
+        System.out.println("entre com sexo (masculino) ou (feminino)");
+        String sexo = scan.nextLine();
+        double pesoIdeal;
+        if (sexo.equalsIgnoreCase("masculino")) {
+            pesoIdeal = (72.7 * alturaDapessoa) - 58;
+        } else if (sexo.equalsIgnoreCase("feminino")) {
+            pesoIdeal = (62.1 * alturaDapessoa) - 44.7;
+        }
+        else {
+            System.out.println("informação invalida");
+            return;
+        }
+        System.out.println("seu peso ideal é " + pesoIdeal );
+
+        //14
+        System.out.println("microcomputador verificador de peso de peixes");
+        double multa;
+        double excesso;
+        System.out.println("informe o peso em (kg)");
+        double pesoP = scan.nextDouble();
+
+        if (pesoP > 50 ) {
+        excesso = pesoP - 50;
+        multa = excesso * 4;
+        }
+        else {
+            excesso = 0;
+            multa = 0;
+
+        }
+        System.out.println("a quantidade de peso é = "+ pesoP + "o que excedeu o valor foi " + excesso + "a mais que voce adicionou, voce precisa efeturar o pagamento de "+ multa);
+        //15
         System.out.println("quanto que voce ganha por hora? ");
         double salarioHora = scan.nextDouble();
         System.out.println("quantas horas voce trabalha no mês? ");
@@ -62,14 +105,12 @@ public class java016 {
         System.out.println("voce recebe de salario liquido um total de = " + SalarioLiquido + " mes");
         System.out.println("voce paga um total de " + Descontos + " todos os meses de descontos ");
 
-        //14 // no arquivo esta 15
+        //18
         System.out.println("entre com o tamanho do arquivo");
         double tamArquivo = scan.nextDouble();
         System.out.println("entre com a velociade da internet");
         double velInternet = scan.nextDouble();
         double tempopDownload = tamArquivo / velInternet;
         System.out.println("o tempo para fazer o download é de "+ tempopDownload);
-
-
     }
 }
