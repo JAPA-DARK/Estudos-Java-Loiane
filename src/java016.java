@@ -4,6 +4,7 @@ public class java016 {
     public static void main(String[] args) {
         //11
         Scanner scan = new Scanner(System.in);
+        /*
         System.out.println("entre com um numero inteiro!");
         double numberInt = scan.nextDouble();
         System.out.println("entre com outro numero inteiro!");
@@ -104,13 +105,57 @@ public class java016 {
         System.out.println("voce paga para o IR um total de " + impostoRenda  + " do seu salario bruto");
         System.out.println("voce recebe de salario liquido um total de = " + SalarioLiquido + " mes");
         System.out.println("voce paga um total de " + Descontos + " todos os meses de descontos ");
+        */
+        //16
+        System.out.println("loja de tintas");
+        System.out.println("informe o tamamanho em m² a ser tingido");
+        double areaQuadrada = scan.nextDouble();
+        double litrosusadosporLata = areaQuadrada / 3;
+        double latasnecessarias = Math.ceil(litrosusadosporLata / 18);
+        double precoLata = 80;
+        double totalValor = latasnecessarias * precoLata;
+
+        System.out.println("voce vai precisar de "+(int)latasnecessarias + " lata para tingir esses " + (int)areaQuadrada+ " metros quadrado e o total dessa compra é de  " + totalValor+ " reais");
+
+        
+        //17
+        System.out.println("loja de latas 2.0");
+        System.out.println("informe a area² a ser pintada");
+        double area = scan.nextDouble();
+        double litros = area / 6; //1 litro pinta 6 metros
+        double Latasnecessarias = Math.ceil(litros / 18); // litros por metro divididos pelos litros que vem na lata
+        double valorporlata = 80; // valor de cada lata
+        double totallata = valorporlata * Latasnecessarias;
+        double galoesnecessarios = Math.ceil(litros / 3.6); //litros por metro divididos pelos litros que vem no galao arredondando para baixo
+        double valorporgalao = 25;
+        double totalgalao = valorporgalao * galoesnecessarios;
+        double litroscomfolga = litros * 1.10;
+        double latasmistura = Math.floor(litroscomfolga / 18);
+        double litrosrestantes = litroscomfolga % 18;
+        double galoesmistura = Math.ceil(litrosrestantes / 3.6);
+        double totalmistura = (latasmistura * valorporlata)+(galoesmistura * valorporgalao);
+
+
+        System.out.println("compra de apenas latas "+ (int)Latasnecessarias+ " totalizando "+ totallata + " de reais" );
+        System.out.println("compra de apenas galoes "+ (int)galoesnecessarios+ " totalizando "+ totalgalao + " de reais" );
+        System.out.println("compra misturando latas e galoes " + (int)latasmistura + " lata(s) e " + (int)galoesmistura + " galao(oes) totalizando " +totalmistura + " de reais");
+
+
+
+
+
+
+
+
 
         //18
-        System.out.println("entre com o tamanho do arquivo");
+       /* System.out.println("entre com o tamanho do arquivo");
         double tamArquivo = scan.nextDouble();
         System.out.println("entre com a velociade da internet");
         double velInternet = scan.nextDouble();
         double tempopDownload = tamArquivo / velInternet;
         System.out.println("o tempo para fazer o download é de "+ tempopDownload);
+        */
+
     }
 }
