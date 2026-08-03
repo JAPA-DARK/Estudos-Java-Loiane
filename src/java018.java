@@ -38,6 +38,7 @@ public class java018 {
         }
 
         */
+        //exemplos
         switch (diaSemana) {
             case 6:
             case 0: System.out.println("fim de semana");break;
