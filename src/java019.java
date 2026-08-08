@@ -43,6 +43,47 @@ public class java019 {
         }
         else {
             System.out.println("sexo invalido,digite um dentro dos parametros ");
+
+        }
+
+        System.out.println("verificador de vogais pra saber se é vogal ou consoante");
+        String letra = scan.next();
+
+
+        if (letra.equalsIgnoreCase("a")||
+         letra.equalsIgnoreCase("e")
+         || letra.equalsIgnoreCase("i")
+         || letra.equalsIgnoreCase("o")
+         || letra.equalsIgnoreCase("u"))
+        {
+            System.out.println("é uma vogal");
+
+        } else if (letra.equalsIgnoreCase("b") ||
+                letra.equalsIgnoreCase("c") ||
+                letra.equalsIgnoreCase("d")||
+                letra.equalsIgnoreCase("f")||
+                letra.equalsIgnoreCase("g")||
+                letra.equalsIgnoreCase("h")||
+                letra.equalsIgnoreCase("j")||
+                letra.equalsIgnoreCase("k")||
+                letra.equalsIgnoreCase("l")||
+                letra.equalsIgnoreCase("m")||
+                letra.equalsIgnoreCase("n")||
+                letra.equalsIgnoreCase("p")||
+                letra.equalsIgnoreCase("q")||
+                letra.equalsIgnoreCase("r")||
+                letra.equalsIgnoreCase("s")||
+                letra.equalsIgnoreCase("t")||
+                letra.equalsIgnoreCase("v")||
+                letra.equalsIgnoreCase("w")||
+                letra.equalsIgnoreCase("x")||
+                letra.equalsIgnoreCase("y")||
+                letra.equalsIgnoreCase("z"))
+        {
+            System.out.println( " é uma consoante");
+
+        } else {
+            System.out.println("informação invalida 'digite apenas uma letra e dentro dos parametros'");
         }
     }
 }
