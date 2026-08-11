@@ -85,5 +85,25 @@ public class java019 {
         } else {
             System.out.println("informação invalida 'digite apenas uma letra e dentro dos parametros'");
         }
+        System.out.println("verificador de aprovação");
+        System.out.println("diga a sua 1° nota ");
+        double nota1 = scan.nextDouble();
+        System.out.println("diga a sua 2° nota ");
+        double nota2 = scan.nextDouble();
+
+        double notaMedia = (nota1 + nota2)  / 2;
+        if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10){
+            System.out.println("nota invalida, digite uma nota entre 0 e 10");
+        }
+        if (notaMedia == 10 ){
+            System.out.println("voce foi aprovado com Distinção, excelente!!! ");
+            System.out.println("sua media ficou em   "+notaMedia);
+        } else if (notaMedia >= 7 ){
+            System.out.println("voce foi aprovado parabéns!");
+            System.out.println("sua media ficou em  "+notaMedia);
+        } else {
+            System.out.println("voce foi reprovado, tente novamente");
+            System.out.println("sua media ficou em   "+notaMedia);
+        }
     }
 }
