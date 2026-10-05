@@ -207,6 +207,7 @@ public class java019 {
             System.out.println(numero3 + " "+ numero2+ " "+ numero1);
         }
     */
+        /*
         System.out.println("em que turno voce estuda?");
         System.out.println("M(matutino) V(verpertino) N(noturno");
         String turnoEstudante = scan.nextLine();
@@ -223,5 +224,47 @@ public class java019 {
         else {
             System.out.println("essa informação é invalida, por favor adicione APENAS AS LETRAS M | V | N  no questionario!!!");
         }
+        */
+        System.out.println("digite seu salario atual?!");
+        double salarioAtual = scan.nextDouble();
+
+        int porcentagem20 = 20;
+        int porcentagem15 = 15;
+        int porcentagem10 = 10;
+        int porcentagem05 = 5;
+        int aplicado;
+        double novoSalario;
+        double aumentoSalarial;
+
+    if (salarioAtual <= 280){
+        novoSalario = salarioAtual * 1.20;
+        aplicado = porcentagem20;
+        aumentoSalarial = novoSalario - salarioAtual;
+
+    }
+    else if (salarioAtual > 280 && salarioAtual <= 700 ){
+        novoSalario = salarioAtual * 1.15;
+        aplicado = porcentagem15;
+        aumentoSalarial = novoSalario - salarioAtual;
+
+    }
+    else if (salarioAtual > 700 && salarioAtual <= 1500){
+        novoSalario = salarioAtual * 1.10;
+        aplicado = porcentagem10;
+        aumentoSalarial = novoSalario - salarioAtual;
+
+    }
+    else {
+        novoSalario = salarioAtual * 1.05;
+        aplicado = porcentagem05;
+        aumentoSalarial = novoSalario - salarioAtual;
+
+    }
+
+    System.out.println("seu salario antes do reajuste era = " + salarioAtual);
+    System.out.println("a porcentagem aplicada ao seu salario foi de "+ aplicado+ "%");
+    System.out.printf("valor do aumento = %.2f%n",aumentoSalarial ,"R$");
+    System.out.printf("seu novo salario é = %.2f ", novoSalario ,"R$");
+
     }
 }
