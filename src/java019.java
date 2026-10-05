@@ -147,6 +147,8 @@ public class java019 {
         }
         System.out.println("o maior numero digitado foi o "+ maiorNumero + " e o menor numero foi " + menorNumero );
         */
+
+        /*
         System.out.println("digite os preços dos produtos aqui");
         System.out.println("quanto custa a bandagem?");
         int produto1 = scan.nextInt();
@@ -172,7 +174,54 @@ public class java019 {
         }
 
         System.out.println("indentificamos que o produto mais barato é "+Produto +" que custa "+ produtoMaisbarato);
+        */
+        /*
+        System.out.println("qual é o primeiro numero?");
+        int numero1 = scan.nextInt();
+        System.out.println("qual é o segundo numero?");
+        int numero2 = scan.nextInt();
+        System.out.println("qual é o terceiro numero?");
+        int numero3 = scan.nextInt();
 
+        if (numero1 >= numero2 && numero2 >= numero3){
+            System.out.println(numero1 + " "+ numero2+ " "+ numero3);
+        }
 
+        else if (numero1 >= numero3 && numero3 >= numero2){
+            System.out.println(numero1 + " "+ numero3+ " "+ numero2);
+        }
+
+        else if (numero2 >= numero1 && numero1 >= numero3){
+            System.out.println(numero2 + " "+ numero1+ " "+ numero3);
+        }
+
+        else if (numero2 >= numero3 && numero3 >= numero1){
+            System.out.println(numero2 + " "+ numero3+ " "+ numero1);
+        }
+
+        else if (numero3 >= numero1 && numero1 >= numero2){
+            System.out.println(numero3 + " "+ numero1+ " "+ numero2);
+        }
+
+        else {
+            System.out.println(numero3 + " "+ numero2+ " "+ numero1);
+        }
+    */
+        System.out.println("em que turno voce estuda?");
+        System.out.println("M(matutino) V(verpertino) N(noturno");
+        String turnoEstudante = scan.nextLine();
+
+        if (turnoEstudante.equalsIgnoreCase("M")){
+            System.out.println("olá estudante, tenha um otimo dia");
+        }
+        else if (turnoEstudante.equalsIgnoreCase("V")){
+            System.out.println("olá estudante, tenha uma boa tarde");
+        }
+        else if (turnoEstudante.equalsIgnoreCase("N")){
+            System.out.println("olá estudante, tenha uma boa noite");
+        }
+        else {
+            System.out.println("essa informação é invalida, por favor adicione APENAS AS LETRAS M | V | N  no questionario!!!");
+        }
     }
 }
