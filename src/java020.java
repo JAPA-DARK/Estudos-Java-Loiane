@@ -9,6 +9,7 @@ public class java020 {
         exercicio13(scan);
         exercicio14(scan);
         exercicio15(scan);
+        exercicio16(scan);
 
         scan.close();
     }
@@ -23,7 +24,7 @@ public class java020 {
         double salarioBruto = horaDeTrabalho * quantidadeHoraTrabalhada;
         double descontoIR = 0;
 
-        if (salarioBruto <= 900) {
+        if (salarioBruto < 900) {
             descontoIR = 0;
         } else if (salarioBruto > 900 && salarioBruto < 1500) {
             descontoIR = salarioBruto * 0.05;
@@ -148,8 +149,34 @@ public class java020 {
             }
         else
             System.out.println("esses valores não formam um triangulo");
+    }
+
+
+    public static void exercicio16(Scanner scan) {
+        System.out.println("qual é o valor de A ");
+        int valorA = scan.nextInt();
+        // delta = b² - 4.a.c
+        if (valorA == 0) {
+            System.out.println("equação não é do segundo grau");
+            return;
+        }
+        System.out.println("qual é o valor de B ");
+        int valorB = scan.nextInt();
+        System.out.println("qual é o valor de C ");
+        int valorC = scan.nextInt();
+
+        int delta = valorB * valorB - 4 * valorA * valorC;
+        if (delta < 0) {
+            System.out.println("essa equação não possui raizes reais, o seu delta é negativo");
+        } else if (delta == 0) {
+            System.out.println("essa equação possui apenas uma raiz real, delta igual a zero");
+        } else {
+            System.out.println("essa equação possui duas raizes reais, delta maior que zero");
         }
     }
+}
+
+
 
 
 
