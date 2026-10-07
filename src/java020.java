@@ -8,6 +8,7 @@ public class java020 {
         exercicio12(scan);
         exercicio13(scan);
         exercicio14(scan);
+        exercicio15(scan);
 
         scan.close();
     }
@@ -74,7 +75,8 @@ public class java020 {
 
         System.out.println("hoje é " + dias + " tenha um bom dia ");
     }
-        public static void exercicio14(Scanner scan){
+
+    public static void exercicio14(Scanner scan) {
 
         System.out.println("digite sua primeira nota");
         int nota1 = scan.nextInt();
@@ -92,46 +94,67 @@ public class java020 {
         entre 4.0 e 6.0                    D
         entre 4.0 e 0                      E
          */
-            if(media < 4 && media >= 0 ){
-                conceito = "E";
-                situacao = "REPROVADO";
-                System.out.println("sua nota é "+nota1+" na primeira avaliação "+nota2+" na segunda avaliação");
-                System.out.println("sua media é "+ media);
-                System.out.println("seu conceito é "+ conceito+" "+situacao);
-            }
-            else if(media >= 4 && media < 6 ){
-                conceito = "D";
-                situacao = "REPROVADO";
-                System.out.println("sua nota é "+nota1+" na primeira avaliação "+nota2+" na segunda avaliação");
-                System.out.println("sua media é "+ media);
-                System.out.println("seu conceito é "+ conceito+" "+situacao);
-            }
-            else if(media >= 6 && media < 7.5 ){
-                conceito = "C";
-                situacao = "APROVADO";
-                System.out.println("sua nota é "+nota1+" na primeira avaliação "+nota2+" na segunda avaliação");
-                System.out.println("sua media é "+ media);
-                System.out.println("seu conceito é "+ conceito+" " +situacao);
-            }
-            else if(media >= 7.5 && media < 9 ){
-                conceito = "B";
-                situacao = "APROVADO";
-                System.out.println("sua nota é "+nota1+" na primeira avaliação "+nota2+" na segunda avaliação");
-                System.out.println("sua media é "+ media);
-                System.out.println("seu conceito é "+ conceito+" "+situacao);
-            }
-            else if(media >= 9 && media <= 10 ){
-                conceito = "A";
-                situacao = "APROVADO";
-                System.out.println("sua nota é "+nota1+" na primeira avaliação "+nota2+" na segunda avaliação");
-                System.out.println("sua media é "+ media);
-                System.out.println("seu conceito é "+ conceito+" "+situacao);
-            }
-            else {
-                System.out.println("informação invalida");
-                return;
-            }
+        if (media < 4 && media >= 0) {
+            conceito = "E";
+            situacao = "REPROVADO";
+            System.out.println("sua nota é " + nota1 + " na primeira avaliação " + nota2 + " na segunda avaliação");
+            System.out.println("sua media é " + media);
+            System.out.println("seu conceito é " + conceito + " " + situacao);
+        } else if (media >= 4 && media < 6) {
+            conceito = "D";
+            situacao = "REPROVADO";
+            System.out.println("sua nota é " + nota1 + " na primeira avaliação " + nota2 + " na segunda avaliação");
+            System.out.println("sua media é " + media);
+            System.out.println("seu conceito é " + conceito + " " + situacao);
+        } else if (media >= 6 && media < 7.5) {
+            conceito = "C";
+            situacao = "APROVADO";
+            System.out.println("sua nota é " + nota1 + " na primeira avaliação " + nota2 + " na segunda avaliação");
+            System.out.println("sua media é " + media);
+            System.out.println("seu conceito é " + conceito + " " + situacao);
+        } else if (media >= 7.5 && media < 9) {
+            conceito = "B";
+            situacao = "APROVADO";
+            System.out.println("sua nota é " + nota1 + " na primeira avaliação " + nota2 + " na segunda avaliação");
+            System.out.println("sua media é " + media);
+            System.out.println("seu conceito é " + conceito + " " + situacao);
+        } else if (media >= 9 && media <= 10) {
+            conceito = "A";
+            situacao = "APROVADO";
+            System.out.println("sua nota é " + nota1 + " na primeira avaliação " + nota2 + " na segunda avaliação");
+            System.out.println("sua media é " + media);
+            System.out.println("seu conceito é " + conceito + " " + situacao);
+        } else {
+            System.out.println("informação invalida");
+            return;
         }
     }
+
+    public static void exercicio15(Scanner scan) {
+        System.out.println("me diga qual é a medida do primeiro lado do triangulo");
+        int lado1 = scan.nextInt();
+        System.out.println("me diga qual é a medida do segundo lado do triangulo");
+        int lado2 = scan.nextInt();
+        System.out.println("me diga qual é a medida do terceiro lado do triangulo");
+        int lado3 = scan.nextInt();
+
+        if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado3 + lado2 > lado1)
+            if (lado1 == lado2 && lado2 == lado3) {
+                System.out.println("é um Triângulo equilatero");
+            } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+                System.out.println("é um Triângulo Isósceles");
+            } else {
+                System.out.println("é um Triângulo Escaleno");
+            }
+        else
+            System.out.println("esses valores não formam um triangulo");
+        }
+    }
+
+
+
+
+
+
 
 
