@@ -10,6 +10,7 @@ public class java020 {
         exercicio14(scan);
         exercicio15(scan);
         exercicio16(scan);
+        exercicio17(scan);
 
         scan.close();
     }
@@ -172,6 +173,17 @@ public class java020 {
             System.out.println("essa equação possui apenas uma raiz real, delta igual a zero");
         } else {
             System.out.println("essa equação possui duas raizes reais, delta maior que zero");
+        }
+    }
+    public static void exercicio17(Scanner scan){
+        System.out.println("me diga o ano?");
+        int ano = scan.nextInt();
+
+        if (ano % 4 == 0 && ano % 100 != 0 || ano % 400 == 0){
+            System.out.println("o ano "+ ano +" é bissexto");
+        }
+        else {
+            System.out.println("o ano "+ ano+ " não é bissexto");
         }
     }
 }
