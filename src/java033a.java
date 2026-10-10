@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
-public class java018 {
+public class java033a {
+
     public static void main(String[] args) {
         //SwitchCase
         Scanner scan = new Scanner(System.in);
@@ -41,14 +42,19 @@ public class java018 {
         //exemplos
         switch (diaSemana) {
             case 6:
-            case 0: System.out.println("fim de semana");break;
+            case 0:
+                System.out.println("fim de semana");
+                break;
             case 1:
             case 2:
             case 3:
             case 4:
-            case 5: System.out.println("dia util"); break;
+            case 5:
+                System.out.println("dia util");
+                break;
 
-            default:System.out.println("não é um dia da semana valido (digite algo dentre os parametros 0-6)");
+            default:
+                System.out.println("não é um dia da semana valido (digite algo dentre os parametros 0-6)");
         }
     }
 }
