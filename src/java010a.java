@@ -1,4 +1,4 @@
-public class java010 {
+public class java010a {
     public static void main(String[] args) {
          //operadores aritméticos
         int resultado = 1 + 2;

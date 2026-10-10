@@ -1,4 +1,4 @@
-public class java03 {
+public class java03a {
     public static void main(String[] args) {
         //variaveis boolean
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class java08 {
+public class java08a {
     public static void main(String[] args){
 //teste pratico de leitura de dados
         Scanner scan = new Scanner(System.in);

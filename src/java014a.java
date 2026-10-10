@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class java014 {
+public class java014a {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         //exercicios loiane {aula-013 ex 01 a 05}

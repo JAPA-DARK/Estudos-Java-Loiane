@@ -1,4 +1,4 @@
-public class java05 {
+public class java05a {
     public static void main(String[] args) {
         int Oct31 = 031;
         int Dec25 = 25;

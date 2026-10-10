@@ -1,4 +1,4 @@
-public class java01 {
+public class java01a {
     public static void main(String[] args) {
 
         //pontos flutuantes

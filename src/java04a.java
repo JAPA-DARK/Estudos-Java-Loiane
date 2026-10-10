@@ -1,4 +1,4 @@
-public class java04 {
+public class java04a {
     public static void main(String[] agrs) {
         //curiosidadeint
     int var01 = 2147483647;

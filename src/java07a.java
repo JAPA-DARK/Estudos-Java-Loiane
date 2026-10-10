@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class java07 {
+public class java07a {
     public static void main (String[] args) {
     //leitura dados de teclado
         Scanner scan = new Scanner(System.in);

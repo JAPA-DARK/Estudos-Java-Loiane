@@ -1,4 +1,4 @@
-public class java011 {
+public class java011a {
     public static void main(String[] args){
         //operadores relacionais
         int valor1 = 1 ;

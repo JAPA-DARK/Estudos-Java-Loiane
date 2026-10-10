@@ -1,4 +1,4 @@
-public class java012 {
+public class java012a {
     public static void main(String[] args){
         //operadores logicos
         int valor1 = 1;

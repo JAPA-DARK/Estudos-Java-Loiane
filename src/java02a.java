@@ -1,4 +1,4 @@
-public class java02 {
+public class java02a {
     public static void main(String[] agrs) {
         //char ou caracteris com valores tabela ascii
         //char o = 'o';

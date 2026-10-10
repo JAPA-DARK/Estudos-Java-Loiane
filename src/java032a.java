@@ -1,10 +1,12 @@
 import java.util.Scanner;
 
-public class java032a {
+public class java032a{
     } public static void main(String[] args) {
         //controle de decisão ( if e else)
         //verificador de idade
+
         Scanner scan = new Scanner(System.in);
+
         System.out.println("digite sua idade ");
         int idade = scan.nextInt();
         if (idade >= 18) {
