@@ -1,12 +1,11 @@
 import java.util.Scanner;
 
-public class java032a{
-    } public static void main(String[] args) {
-        //controle de decisão ( if e else)
-        //verificador de idade
+public class java032a {
+    public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-
+//controle de decisão ( if e else)
+        //verificador de idade
         System.out.println("digite sua idade ");
         int idade = scan.nextInt();
         if (idade >= 18) {
@@ -29,8 +28,8 @@ public class java032a{
             System.out.println("se conseguir um desconto nesse valor " + valor + " vai ficar muito bom para comprar");
         } else if (valor <= 75) {
             System.out.println("o valor é " + valor + " e isso é bem alto, da pra pesquisar um pouco mais pra achar um melhor");
-        }
-        else
-            System.out.println(+valor+ " Reais é muito caro, não compra, tu é pobre esquece disso não!!! nem fez a compra do mês ainda");
+        } else
+            System.out.println(+valor + " Reais é muito caro, não compra, tu é pobre esquece disso não!!! nem fez a compra do mês ainda");
     }
+}
 

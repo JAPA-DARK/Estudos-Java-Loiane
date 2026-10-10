@@ -1,10 +1,10 @@
 import java.util.Scanner;
+
 public class java043a {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
         // EXERCÍCIO 010
-        scan.nextLine();
         System.out.println("em que turno voce estuda?");
         System.out.println("M(matutino) V(verpertino) N(noturno");
         String turnoEstudante = scan.nextLine();
@@ -17,6 +17,7 @@ public class java043a {
             System.out.println("olá estudante, tenha uma boa noite");
         } else {
             System.out.println("essa informação é invalida, por favor adicione APENAS AS LETRAS M | V | N  no questionario!!!");
+            return;
         }
     }
 }

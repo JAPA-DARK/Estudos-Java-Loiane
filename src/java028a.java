@@ -21,17 +21,6 @@ public class java028a {
         System.out.println("voce recebe de salario liquido um total de = " + SalarioLiquido + " mes");
         System.out.println("voce paga um total de " + Descontos + " todos os meses de descontos ");
 
-        //16
-        System.out.println("loja de tintas");
-        System.out.println("informe o tamamanho em m² a ser tingido");
-        double areaQuadrada = scan.nextDouble();
-        double litrosusadosporLata = areaQuadrada / 3;
-        double latasnecessarias = Math.ceil(litrosusadosporLata / 18);
-        double precoLata = 80;
-        double totalValor = latasnecessarias * precoLata;
-
-        System.out.println("voce vai precisar de " + (int) latasnecessarias + " lata para tingir esses " + (int) areaQuadrada + " metros quadrado e o total dessa compra é de  " + totalValor + " reais");
-
 
     }
 }
